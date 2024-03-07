@@ -31,10 +31,8 @@ def download_loras(style: str):
     for element in list(lora_info.keys()):
         for lora in lora_info[element]:
             lora_id = lora["id"]
-            lora_url = lora["url"]
-            download_file(lora_url, f"models/lora/{style}/{lora_id}.safetensors")
-            break
-        break
+            lora_weight_url = lora["weight_url"]
+            download_file(lora_weight_url, f"models/lora/{style}/{lora_id}.safetensors")
 
 if __name__ == "__main__":
     download_loras("reality")
