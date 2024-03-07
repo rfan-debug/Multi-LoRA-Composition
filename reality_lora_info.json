@@ -9,7 +9,8 @@
                 "hazel eyes",
                 "diamond stud earrings"
             ],
-            "url": "https://civitai.com/models/11722/iu?modelVersionId=18576"
+            "url": "https://civitai.com/models/11722/iu?modelVersionId=18576",
+            "weight_url": "https://civitai.com/api/download/models/18576"
         },
         {
             "id": "character_2",
@@ -19,7 +20,8 @@
                 "short red hair",
                 "blue eyes"
             ],
-            "url": "https://civitai.com/models/7468/scarlett-johanssonlora"
+            "url": "https://civitai.com/models/7468/scarlett-johanssonlora",
+            "weight_url": "https://civitai.com/api/download/models/8773"
         },
         {
             "id": "character_3",
@@ -29,7 +31,8 @@
                 "muscular male",
                 "serious look on his face"
             ],
-            "url": "https://civitai.com/models/22345/dwayne-the-rock-johnsonlora?modelVersionId=26680"
+            "url": "https://civitai.com/models/22345/dwayne-the-rock-johnsonlora?modelVersionId=26680",
+            "weight_url": "https://civitai.com/api/download/models/26680"
         }
     ],
     "clothing": [
@@ -41,7 +44,8 @@
                 "white shirt short sleeves",
                 "black pencil skirt"
             ],
-            "url": "https://civitai.com/models/12657/thai-university-uniform?modelVersionId=58690"
+            "url": "https://civitai.com/models/12657/thai-university-uniform?modelVersionId=58690",
+            "weight_url": "https://civitai.com/api/download/models/58690"
         },
         {
             "id": "clothing_2",
@@ -52,7 +56,8 @@
                 "red tie",
                 "blue pleated microskirt"
             ],
-            "url": "https://civitai.com/models/201305?modelVersionId=291486"
+            "url": "https://civitai.com/models/201305?modelVersionId=291486",
+            "weight_url": "https://civitai.com/api/download/models/291486?type=Model&format=SafeTensor"
         }
     ],
     "style": [
@@ -63,7 +68,8 @@
                 "film overlay",
                 "film grain"
             ],
-            "url": "https://civitai.com/models/90393/japan-vibes-film-color?modelVersionId=107032"
+            "url": "https://civitai.com/models/90393/japan-vibes-film-color?modelVersionId=107032",
+            "weight_url": "https://civitai.com/api/download/models/107032"
         },
         {
             "id": "style_2",
@@ -71,7 +77,8 @@
             "trigger": [
                 "bright lighting"
             ],
-            "url": "https://civitai.com/models/70034/brightness-tweaker-lora-lora"
+            "url": "https://civitai.com/models/70034/brightness-tweaker-lora-lora",
+            "weight_url": "https://civitai.com/api/download/models/74697?type=Model&format=SafeTensor"
         }
     ],
     "background": [
@@ -82,7 +89,8 @@
                 "lib_bg",
                 "library bookshelf"
             ],
-            "url": "https://civitai.com/models/113488/library-bookshelf?modelVersionId=125699"
+            "url": "https://civitai.com/models/113488/library-bookshelf?modelVersionId=125699",
+            "weight_url": "https://civitai.com/api/download/models/125699?type=Model&format=SafeTensor"
         },
         {
             "id": "background_2",
@@ -92,7 +100,8 @@
                 "river",
                 "forest"
             ],
-            "url": "https://civitai.com/models/104292/the-forest-light?modelVersionId=127699"
+            "url": "https://civitai.com/models/104292/the-forest-light?modelVersionId=127699",
+            "weight_url": "https://civitai.com/api/download/models/127699?type=Model&format=SafeTensor"
         }
     ],
     "object": [
@@ -102,7 +111,8 @@
             "trigger": [
                 "transparent umbrella"
             ],
-            "url": "https://civitai.com/models/54218/umbrellalora?modelVersionId=58578"
+            "url": "https://civitai.com/models/54218/umbrellalora?modelVersionId=58578",
+            "weight_url": "https://civitai.com/api/download/models/58578"
         },
         {
             "id": "object_2",
@@ -110,7 +120,8 @@
             "trigger": [
                 "blow bubble gum"
             ],
-            "url": "https://civitai.com/models/97550/bubble-gum-kaugummi-v20?modelVersionId=117038"
+            "url": "https://civitai.com/models/97550/bubble-gum-kaugummi-v20?modelVersionId=117038",
+            "weight_url": "https://civitai.com/api/download/models/117038?type=Model&format=SafeTensor"
         }
     ]
 }
