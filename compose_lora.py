@@ -30,14 +30,14 @@ def main(args):
         pipeline = StableDiffusionPipeline.from_single_file(
             model_name,
             custom_pipeline="MingZhong/StableDiffusionPipeline-with-LoRA-C",
-            torch_dtype=torch.float16,
+            # torch_dtype=torch.float16,
             use_safetensors=True
         ).to("cuda")
     else:
         pipeline = DiffusionPipeline.from_pretrained(
             model_name,
             custom_pipeline="MingZhong/StableDiffusionPipeline-with-LoRA-C",
-            torch_dtype=torch.float16,
+            # torch_dtype=torch.float16,
             use_safetensors=True
         ).to("cuda")
 
