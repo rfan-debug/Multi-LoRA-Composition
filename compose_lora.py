@@ -23,7 +23,7 @@ def main(args):
     if args.image_style == 'anime':
         model_name = 'gsdf/Counterfeit-V2.5'
     else:
-        model_name = "/home/jupyter/workspace/Multi-LoRA-Composition/models/checkpoints/chilloutmix-Ni-ema-fp32.safetensors"
+        model_name = "/home/jupyter/workspace/Multi-LoRA-Composition/models/checkpoints/chilloutmix-Ni-non-ema-fp32.safetensors"
         # model_name = 'SG161222/Realistic_Vision_V5.1_noVAE'
 
     if model_name.endswith(".safetensors"):
