@@ -88,7 +88,7 @@ def main(args):
         else:
             pipeline.set_adapters(cur_loras)
             switch_callback = None
-
+        
         # generate images
         image = pipeline(
             prompt=prompt, 
