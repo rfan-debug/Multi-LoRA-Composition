@@ -3,7 +3,7 @@ import torch
 import argparse
 from tqdm import tqdm
 from os.path import join, exists
-from diffusers import DiffusionPipeline, AutoencoderKL
+from diffusers import DiffusionPipeline, AutoencoderKL, StableDiffusionPipeline
 from diffusers import DPMSolverMultistepScheduler
 
 from utils import load_lora_info, generate_combinations
@@ -23,14 +23,23 @@ def main(args):
     if args.image_style == 'anime':
         model_name = 'gsdf/Counterfeit-V2.5'
     else:
-        model_name = 'SG161222/Realistic_Vision_V5.1_noVAE'
+        model_name = "/home/jupyter/workspace/Multi-LoRA-Composition/models/checkpoints/chilloutmix-Ni-ema-fp32.safetensors"
+        # model_name = 'SG161222/Realistic_Vision_V5.1_noVAE'
 
-    pipeline = DiffusionPipeline.from_pretrained(
-        model_name,
-        custom_pipeline="MingZhong/StableDiffusionPipeline-with-LoRA-C",
-        # torch_dtype=torch.float16,
-        use_safetensors=True
-    ).to("cuda")
+    if model_name.endswith(".safetensors"):
+        pipeline = StableDiffusionPipeline.from_single_file(
+            model_name,
+            custom_pipeline="MingZhong/StableDiffusionPipeline-with-LoRA-C",
+            torch_dtype=torch.float16,
+            use_safetensors=True
+        ).to("cuda")
+    else:
+        pipeline = DiffusionPipeline.from_pretrained(
+            model_name,
+            custom_pipeline="MingZhong/StableDiffusionPipeline-with-LoRA-C",
+            torch_dtype=torch.float16,
+            use_safetensors=True
+        ).to("cuda")
 
     # set vae
     if args.image_style == "reality":
